@@ -1,0 +1,30 @@
+/************************
+Seletores iguais, exceção important
+#pagina p{
+    color red !important;
+}
+
+#pagina p{
+    color: blue;
+}
+*/
+
+/************************
+Se um seletor for mais especifico que outro a regra mais especifica sera  aplicada
+(tera precendencia sobre regras mais gerais)
+*/
+*{
+    color: red;
+}
+
+h2{
+    color: blue; /*3*/
+}
+
+h2.verde{
+    color: green; /*2*/
+}
+
+h2#amarelo{
+    color:yellow; /*1*/
+}
